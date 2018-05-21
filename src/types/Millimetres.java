@@ -26,6 +26,14 @@ public class Millimetres {
 		millimetreValue = _value.intValue();
 	}
 	
+	public Millimetres(String _value) {
+		// remove all non numeric characters from string
+		_value = _value.replaceAll("\\D+","");
+		
+		// if _value is not null, parse to int. If _value is empty, set to zero
+		millimetreValue = _value != null ? Integer.parseInt(_value) : 0;
+	}
+	
 	public int getMillimetre() {
 		return millimetreValue;
 	}

@@ -26,6 +26,14 @@ public class Centimetres {
 		centimetreValue = _value.intValue();
 	}
 	
+	public Centimetres(String _value) {
+		// remove all non numeric characters from string
+		_value = _value.replaceAll("\\D+","");
+		
+		// if _value is not null, parse to int. If _value is empty, set to zero
+		centimetreValue = _value != null ? Integer.parseInt(_value) : 0;
+	}
+	
 	public int getCentimetre() {
 		return centimetreValue;
 	}
