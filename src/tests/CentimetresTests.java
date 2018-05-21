@@ -1,10 +1,10 @@
-package Tests;
+package tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class MillimetreTests {
+class CentimetresTests {
 
 	@Test
 	void test() {
