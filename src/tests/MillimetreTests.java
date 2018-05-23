@@ -9,7 +9,7 @@ import types.Millimetres;
 class MillimetreTests {
 
 	@Test
-	void whenIntValueUsed_ExpectStringResult() {	
+	void whenIntMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres(11);
 		String expectedResult = "";
@@ -24,7 +24,7 @@ class MillimetreTests {
 	}
 	
 	@Test
-	void whenDoubleValueUsed_ExpectStringResult() {	
+	void whenDoubleMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres(25.0);
 		String expectedResult = "";
@@ -39,7 +39,7 @@ class MillimetreTests {
 	}
 	
 	@Test
-	void whenFloatValueUsed_ExpectStringResult() {	
+	void whenFloatMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres((float)5.0);
 		String expectedResult = "";
@@ -54,7 +54,7 @@ class MillimetreTests {
 	}
 	
 	@Test
-	void whenStringValueUsed_ExpectStringResult() {	
+	void whenStringMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres("3");
 		String expectedResult = "";
@@ -69,7 +69,7 @@ class MillimetreTests {
 	}
 	
 	@Test
-	void whenStringValueWithDecimalUsed_ExpectStringResult() {	
+	void whenStringMillimetreValueWithDecimalUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres("80.0");
 		String expectedResult = "";
@@ -84,7 +84,7 @@ class MillimetreTests {
 	}
 	
 	@Test
-	void whenStringValueWithRandomCharactersUsed_ExpectStringResult() {	
+	void whenStringMillimetreValueWithRandomCharactersUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres("6ghjghj");
 		String expectedResult = "";
