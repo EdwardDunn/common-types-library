@@ -6,9 +6,5 @@ import org.junit.jupiter.api.Test;
 
 class MetresTests {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
 
 }

@@ -95,7 +95,7 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with decimal");
+		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with random characters");
 	}
 
 
