@@ -1,15 +1,16 @@
-package tests;
+package com.abertay.common_types_lib;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import types.Centimetres;
+import com.abertay.common_types_lib.Centimetres;
 
-class CentimetresTests {
+
+public class CentimetresTests {
 
 	@Test
-	void whenIntCentimetreValueUsed_ExpectStringResult() {	
+	public void whenIntCentimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Centimetres centObject = new Centimetres(29);
 		String expectedResult = "";
@@ -20,11 +21,11 @@ class CentimetresTests {
 		actualResult = centObject.getCentimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from a integer value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenDoubleCentimetreValueUsed_ExpectStringResult() {	
+	public void whenDoubleCentimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Centimetres centObject = new Centimetres(744.0);
 		String expectedResult = "";
@@ -35,11 +36,11 @@ class CentimetresTests {
 		actualResult = centObject.getCentimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from a double value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenFloatCentimetreValueUsed_ExpectStringResult() {	
+	public void whenFloatCentimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Centimetres centObject = new Centimetres((float)17.0);
 		String expectedResult = "";
@@ -50,11 +51,11 @@ class CentimetresTests {
 		actualResult = centObject.getCentimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from float value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringCentimetreValueUsed_ExpectStringResult() {	
+	public void whenStringCentimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Centimetres centObject = new Centimetres("66");
 		String expectedResult = "";
@@ -65,11 +66,11 @@ class CentimetresTests {
 		actualResult = centObject.getCentimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringCentimetreValueWithDecimalUsed_ExpectStringResult() {	
+	public void whenStringCentimetreValueWithDecimalUsed_ExpectStringResult() {	
 		// arrange
 		Centimetres centObject = new Centimetres("805.0");
 		String expectedResult = "";
@@ -80,11 +81,11 @@ class CentimetresTests {
 		actualResult = centObject.getCentimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with decimal");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringCentimetreValueWithRandomCharactersUsed_ExpectStringResult() {	
+	public void whenStringCentimetreValueWithRandomCharactersUsed_ExpectStringResult() {	
 		// arrange
 		Centimetres centObject = new Centimetres("6ghjghj");
 		String expectedResult = "";
@@ -95,7 +96,7 @@ class CentimetresTests {
 		actualResult = centObject.getCentimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with random characters");
+		assertEquals(expectedResult, actualResult);
 	}
 
 

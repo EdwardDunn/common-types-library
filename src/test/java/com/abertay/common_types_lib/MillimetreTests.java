@@ -1,15 +1,16 @@
-package tests;
+package com.abertay.common_types_lib;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import types.Millimetres;
+import com.abertay.common_types_lib.Millimetres;
 
-class MillimetreTests {
+
+public class MillimetreTests {
 
 	@Test
-	void whenIntMillimetreValueUsed_ExpectStringResult() {	
+	public void whenIntMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres(11);
 		String expectedResult = "";
@@ -20,11 +21,11 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from a integer value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenDoubleMillimetreValueUsed_ExpectStringResult() {	
+	public void whenDoubleMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres(25.0);
 		String expectedResult = "";
@@ -35,11 +36,11 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from a double value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenFloatMillimetreValueUsed_ExpectStringResult() {	
+	public void whenFloatMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres((float)5.0);
 		String expectedResult = "";
@@ -50,11 +51,11 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from float value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringMillimetreValueUsed_ExpectStringResult() {	
+	public void whenStringMillimetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres("3");
 		String expectedResult = "";
@@ -65,11 +66,11 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringMillimetreValueWithDecimalUsed_ExpectStringResult() {	
+	public void whenStringMillimetreValueWithDecimalUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres("80.0");
 		String expectedResult = "";
@@ -80,11 +81,11 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with decimal");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringMillimetreValueWithRandomCharactersUsed_ExpectStringResult() {	
+	public void whenStringMillimetreValueWithRandomCharactersUsed_ExpectStringResult() {	
 		// arrange
 		Millimetres milObject = new Millimetres("6ghjghj");
 		String expectedResult = "";
@@ -95,8 +96,6 @@ class MillimetreTests {
 		actualResult = milObject.getMillimetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with random characters");
+		assertEquals(expectedResult, actualResult);
 	}
-
-
 }

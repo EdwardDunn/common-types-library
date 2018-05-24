@@ -7,7 +7,7 @@
  * Version - 1.0
  */
 
-package types;
+package com.abertay.common_types_lib;
 
 public class Millimetres {
 

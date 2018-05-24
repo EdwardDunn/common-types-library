@@ -1,15 +1,16 @@
-package tests;
+package com.abertay.common_types_lib;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import types.Metres;
+import com.abertay.common_types_lib.Metres;
 
-class MetresTests {
+
+public class MetresTest {
 
 	@Test
-	void whenIntMetreValueUsed_ExpectStringResult() {	
+	public void whenIntMetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Metres metreObject = new Metres(9);
 		String expectedResult = "";
@@ -20,11 +21,11 @@ class MetresTests {
 		actualResult = metreObject.getMetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from a integer value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenDoubleMetreValueUsed_ExpectStringResult() {	
+	public void whenDoubleMetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Metres metreObject = new Metres(44.0);
 		String expectedResult = "";
@@ -35,11 +36,11 @@ class MetresTests {
 		actualResult = metreObject.getMetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from a double value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenFloatMetreValueUsed_ExpectStringResult() {	
+	public void whenFloatMetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Metres metreObject = new Metres((float)663.0);
 		String expectedResult = "";
@@ -50,11 +51,11 @@ class MetresTests {
 		actualResult = metreObject.getMetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from float value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringMetreValueUsed_ExpectStringResult() {	
+	public void whenStringMetreValueUsed_ExpectStringResult() {	
 		// arrange
 		Metres metreObject = new Metres("412");
 		String expectedResult = "";
@@ -65,11 +66,11 @@ class MetresTests {
 		actualResult = metreObject.getMetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringMetreValueWithDecimalUsed_ExpectStringResult() {	
+	public void whenStringMetreValueWithDecimalUsed_ExpectStringResult() {	
 		// arrange
 		Metres metreObject = new Metres("105.0");
 		String expectedResult = "";
@@ -80,11 +81,11 @@ class MetresTests {
 		actualResult = metreObject.getMetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with decimal");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 	@Test
-	void whenStringMetreValueWithRandomCharactersUsed_ExpectStringResult() {	
+	public void whenStringMetreValueWithRandomCharactersUsed_ExpectStringResult() {	
 		// arrange
 		Metres metreObject = new Metres("55sdcsdghl");
 		String expectedResult = "";
@@ -95,7 +96,7 @@ class MetresTests {
 		actualResult = metreObject.getMetreWithSuffix();
 		
 		// assert
-		assertEquals(expectedResult, actualResult, "Incorrect string value returned from string value with random characters");
+		assertEquals(expectedResult, actualResult);
 	}
 	
 }
